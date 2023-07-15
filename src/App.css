@@ -1,0 +1,40 @@
+/* write your css here */
+
+.bubble {
+    position: relative;
+    left: -3.5rem;
+
+    background: rgb(31, 33, 42);
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 64px;
+    text-align: center;
+    width: 160px;
+    min-height: max-content;
+    min-width: 130px;
+    border-radius: 10px;
+    padding: 0px;
+    z-index: 5;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: rgb(31, 33, 42) transparent;
+    border-width: 8px 8px 0;
+    bottom: 100%;
+    left: 40%;
+    margin-left: -8px;
+    transform: rotateZ(180deg);
+
+}
+
+input:checked ~ .radio {
+    color:white;
+    background-color: #5e6165;
+    border-radius: 10px;  
+  }
